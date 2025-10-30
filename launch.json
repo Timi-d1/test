@@ -1,0 +1,14 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Catalogue Service",
+      "type": "python",
+      "request": "launch",
+      "module": "uvicorn",
+      "args": ["catalogue.main:app", "--reload", "--port", "8082"],
+      "envFile": "${workspaceFolder}/.env",
+      "console": "integratedTerminal"
+    }
+  ]
+}
